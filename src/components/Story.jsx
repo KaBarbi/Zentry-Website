@@ -1,6 +1,6 @@
 import { useRef } from "react"
 import AnimatedTitle from "./AnimatedTitle"
-import Button from "./Button" // 🔹 Importação do botão
+import Button from "./Button"
 import gsap from "gsap"
 
 const Story = () => {
@@ -70,12 +70,11 @@ const Story = () => {
                                     onMouseEnter={handleMouseLeave}
                                     src="/img/entrance.webp"
                                     alt="entrance"
-                                    className="object-contain" // 🔹 Corrigido aqui
+                                    className="object-contain" 
                                 />
                             </div>
                         </div>
 
-                        {/* SVG invisível para efeito de canto arredondado, opcional */}
                         <svg
                             className="invisible absolute size-0"
                             xmlns="http://www.w3.org/2000/svg"
